@@ -1,10 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import KeepAliveOutlet from './KeepAliveOutlet';
 
 export default function PageLayout() {
   return (
     <React.Fragment>
-      <Outlet />
+      <React.Suspense fallback={<div>loading</div>}>
+        <KeepAliveOutlet />
+      </React.Suspense>
     </React.Fragment>
   );
 }

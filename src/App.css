@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.route-page {
+  animation-fill-mode: backwards;
+}
+
+.fade-enter {
+  opacity: 1;
+  transition: opacity 150ms ease-in;
+}
+
+.fade-enter-done {
+  opacity: 1;
+  transition: opacity 150ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+}
